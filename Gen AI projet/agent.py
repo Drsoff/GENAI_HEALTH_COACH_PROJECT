@@ -4,8 +4,8 @@ from google.genai import types
 from data_models import ResultatCoach # Import des classes Pydantic
 import json
 import streamlit as st
-# Assurez-vous que la clé API est définie dans votre environnement (GEMINI_API_KEY)
-# Si vous utilisez un autre LLM, remplacez cette partie par son SDK (ex: openai.OpenAI())
+# s'assurer que la clé API est définie dans l'environnement (GEMINI_API_KEY)
+# Si on veut utilisez un autre LLM, remplacez cette partie par son SDK (ex: openai.OpenAI())
 
 def creer_prompt_raisonnement(inputs: dict) -> str:
     """Construit un prompt détaillé exigeant le Chain of Thought et l'Auto-Correction."""

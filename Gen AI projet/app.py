@@ -11,10 +11,10 @@ st.set_page_config(
 def display_results(resultat: ResultatCoach):
     """Affiche les résultats structurés de l'Agent."""
     
-    st.header("✨ Programme Personnalisé Généré")
+    st.header("Programme Personnalisé Généré")
     
     # --- 1. AFFICHAGE DU RAISONNEMENT (Le point clé du projet) ---
-    st.subheader("🧠 Logique et Raisonnement de l'Agent (CoT & Self-Correction)")
+    st.subheader("Logique et Raisonnement de l'Agent (CoT & Self-Correction)")
     st.info("Ce sont les étapes de pensée et de validation que l'Agent a suivies pour garantir la fiabilité du plan.")
     
     for i, log in enumerate(resultat.logs_raisonnement):
@@ -26,10 +26,10 @@ def display_results(resultat: ResultatCoach):
     # --- 2. RÉSUMÉ ET PLAN NUTRITIONNEL ---
     col_a, col_b = st.columns(2)
     with col_a:
-        st.subheader("🍽️ Objectifs Calculés")
+        st.subheader("Objectifs Calculés")
         st.metric("Calories Cible Journalière", f"{resultat.estimation_kcal_cible} kcal")
     with col_b:
-        st.subheader("🔬 Répartition des Macros")
+        st.subheader("Répartition des Macros")
         st.markdown(f"**{resultat.macros_cible}** (Protéines/Lipides/Glucides)")
     
     st.subheader("Menus Journaliers")
@@ -56,17 +56,17 @@ def display_results(resultat: ResultatCoach):
     
     st.markdown("---")
     
-    st.subheader("🛒 Liste de Courses")
+    st.subheader("Liste de Courses")
     st.markdown("Voici la liste complète des ingrédients pour la semaine (regroupée par l'Agent) :")
     st.markdown("- " + "\n- ".join(resultat.liste_courses_semaine))
 
 
 def main():
-    st.title("🤖 Coach IA : Programme Nutritionnel & Sportif Personnalisé")
+    st.title("Coach IA : Programme Nutritionnel & Sportif Personnalisé")
     
     # Création du formulaire (inchangé par rapport à la première étape)
     with st.form("user_input_form"):
-        st.header("🎯 Vos Objectifs et Profil")
+        st.header("Vos Objectifs et Profil")
         col1, col2 = st.columns(2)
         
         with col1:
@@ -78,7 +78,7 @@ def main():
 
         with col2:
             niveau_activite = st.selectbox("Niveau d'activité physique", ["Sédentaire", "Léger", "Modéré", "Intense"])
-            st.subheader("⚠️ Contraintes / Antécédents")
+            st.subheader("Contraintes / Antécédents")
             contraintes_sante = st.text_area("Allergies, régimes, antécédents médicaux (ex: Diabète, Végétarien).", placeholder="Ex: Allergie aux noix, végétarien.")
             disponibilites_sport = st.text_area("Disponibilités et préférences sportives (équipement, jours, type).", placeholder="Ex: 3 séances par semaine, préfère la musculation.")
 
