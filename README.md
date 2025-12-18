@@ -10,7 +10,7 @@ Le programme complet est généré et présenté via une interface interactive d
 
 Membres de l'Équipe
 Wacim Ouzaid
-Mohammed Maouni
+Mohammed Manouni
 Idriss Pacotto
 Elias Abdelmalek
 
@@ -54,16 +54,25 @@ Installation
 
 Cloner le dépôt :
 
-git clone VOTRE_URL_DU_DEPOT
+git clone URL_DU_DEPOT
 cd Coach-IA-Nutrition
 
-Installer les dépendances :
+Créer venv au repertoire du projet pour plus de facilité (cd Coach-IA-Nutrition) :
+python -m venv venv
+
+source venv\Scripts\Activate.ps1 (si sur Windows)
+
+on devrait voir apapraitre avant chaque ligne de commande cli le "(venv)"
+
+Installer les dépendances en ayant activé le venv:
 
 pip install -r requirement.txt
 
 Définir la clé API (MacOS/Linux) :
+depuis https://ai.google.dev/gemini-api/docs/api-key?hl=fr generer et retenir la clé API à copier dans le code
 
-export GEMINI_API_KEY="VOTRE_CLÉ_API_ICI"
+Dans le terminal
+export GEMINI_API_KEY="COPIER ICI LA CLÉ API ICI GENEREE SUR GEMINI"
 
 Lancer l'application :
 
