@@ -1,6 +1,6 @@
 # Coach-IA-Nutrition
 
-🥗 Projet IA Générative : Coach de Santé avec Nutrition Intelligente
+Projet IA Générative : Coach de Santé avec Nutrition Intelligente
 1. Description du Projet
 Ce projet consiste à développer un Agent Coach de Santé intelligent utilisant la Generative AI (via l'API Gemini de Google) pour créer des programmes nutritionnels et sportifs entièrement personnalisés.
 
