@@ -11,7 +11,7 @@ Le programme complet est généré et présenté via une interface interactive d
 Membres de l'Équipe
 Wacim Ouzaid
 Mohammed Manouni
-Idriss Pacotto
+Idriss Pascotto
 Elias Abdelmalek
 
 2. Fonctionnalités Clés
@@ -60,7 +60,7 @@ cd Coach-IA-Nutrition
 Créer venv au repertoire du projet pour plus de facilité (cd Coach-IA-Nutrition avant d'installer le venv) :
 python -m venv venv
 
-source venv\Scripts\Activate.ps1 (si sur Windows)
+source venv\Scripts\Activate.ps1 (si sur Windows pour activer le venv)
 
 on devrait voir apapraitre avant chaque ligne de commande cli le "(venv)"
 
