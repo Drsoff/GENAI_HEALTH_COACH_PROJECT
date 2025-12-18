@@ -57,7 +57,7 @@ Cloner le dépôt :
 git clone URL_DU_DEPOT
 cd Coach-IA-Nutrition
 
-Créer venv au repertoire du projet pour plus de facilité (cd Coach-IA-Nutrition) :
+Créer venv au repertoire du projet pour plus de facilité (cd Coach-IA-Nutrition avant d'installer le venv) :
 python -m venv venv
 
 source venv\Scripts\Activate.ps1 (si sur Windows)
@@ -68,11 +68,16 @@ Installer les dépendances en ayant activé le venv:
 
 pip install -r requirement.txt
 
-Définir la clé API (MacOS/Linux) :
-depuis https://ai.google.dev/gemini-api/docs/api-key?hl=fr generer et retenir la clé API à copier dans le code
+Définir la clé API (MacOS ou Windows) :
+depuis https://ai.google.dev/gemini-api/docs/api-key?hl=fr generer et retenir la clé API à copier dans le terminal
 
-Dans le terminal
+Dans le terminal pour initialiser la variable de la clé dans le PATH du PC faire :
+
+POUR MACOS:
 export GEMINI_API_KEY="COPIER ICI LA CLÉ API ICI GENEREE SUR GEMINI"
+
+POUR WINDOWS:
+$env:GEMINI_API_KEY="COPIER ICI LA CLÉ API ICI GENEREE SUR GEMINI"
 
 Lancer l'application :
 
@@ -80,4 +85,4 @@ streamlit run app.py
 
 5. Livrables
    
-Ce dépôt contient le Code Source nécessaire pour la démo vidéo et l'évaluation. Le fichier README.md fournit l'explication du raisonnement avancé choisi.
+Ce dépôt contient le Code Source nécessaire pour la démo vidéo et l'évaluation. LA vidéo démo sera envoyé dans le mail et voici son lien youtube :
